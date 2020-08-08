@@ -11,7 +11,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a href="principal.php"><span class="navbar-brand"><strong>Ferreteria El Pasaje Materiales </strong>| Sistema de Gesti&oacute;n</span></a>
+            <a href="principal.php"><span class="navbar-brand"><strong>Librería Más que papel ... </strong>| Sistema de Gesti&oacute;n</span></a>
         </div>
 
         <div class="navbar-collapse collapse" style="height: 2px;">

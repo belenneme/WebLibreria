@@ -95,7 +95,7 @@ $nombrecategoria= mysql_query("SELECT nombrecategoria
 
     // Logo
     $this->SetTitle('BOLETA DE SUELDO');
-    $this->Image('../images/logo1.jpg',150,10,25);
+    $this->Image('../images/4.png',150,10,25);
     $this->SetFont('Times','B',13);
     // Move to the right
     $this->Cell(80);
@@ -103,7 +103,7 @@ $nombrecategoria= mysql_query("SELECT nombrecategoria
     $this->SetTextColor(0, 0, 0);
     //$this->Write(5,'Boleta de Sueldo');
     $this->Ln(10);
-    $this->Cell(80,5,'FERRETERIA EL PASAJE MATERIALES',0,0,'L');
+    $this->Cell(80,5,'FERRETERIA Más que papel ...',0,0,'L');
     //$this->Ln(5);
     //$this->Cell(80,5,'Cordoba 828',0,0,'L');
     $this->Ln(5);

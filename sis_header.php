@@ -1,7 +1,7 @@
 
 <meta charset="utf8_general_ci">
-<link rel="shortcut icon" type="image/jpg" href="images/logo1.jpg" />
-<title>ElPasajeMateriales</title>
+<link rel="shortcut icon" type="image/jpg" href="images/5.png" />
+<title>MasQuePapel...</title>
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

@@ -20,7 +20,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "sis_header.php" ?>
-<title>El Pasaje Materiales</title>
+<title>Más que papel ...</title>
 </head>
 
 <body>
