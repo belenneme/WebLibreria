@@ -17,7 +17,7 @@ function Header()
   $fecha_hasta = $_POST['fechahasta'];
     // Logo
     $this->SetTitle('IVA_VENTA');
-    $this->Image('../images/logo1.jpg',10,5,25);
+    $this->Image('../images/4.png',10,5,25);
     $this->SetFont('Arial','B',13);
     // Move to the right
     $this->Cell(80);

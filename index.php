@@ -3,8 +3,8 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/jpg" href="images/logo1.jpg" />
-  <title>El Pasaje Materiales</title>
+  <link rel="shortcut icon" type="image/jpg" href="images/5.png" />
+  <title>Más que papel ... </title>
   <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Open+Sans:600'>
   <link rel="stylesheet" href="lib/css/style.css">
 
@@ -34,7 +34,7 @@
           <input type="submit" class="button" value="Sign In">
         </div>
         <div class="hr"></div>
-        <center> <img src="images/logo1.jpg" width="150" height="150"> </center>
+        <center> <img src="images/4.png" width="150" height="150"> </center>
       </div>
     </div>
   </div>

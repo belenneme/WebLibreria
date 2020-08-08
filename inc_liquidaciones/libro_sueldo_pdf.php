@@ -10,7 +10,7 @@ function Header()
 {
     // Logo
     $this->SetTitle('LIBRO SUELDO');
-    $this->Image('../images/logo1.jpg',10,5,25);
+    $this->Image('../images/4.png',10,5,25);
     $this->SetFont('Arial','B',13);
     // Move to the right
     $this->Cell(80);
