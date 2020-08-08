@@ -7,7 +7,7 @@
 
 ?>
 <form action="alta_venta.php" method="POST" role="form" onsubmit="return validar();">
-
+<legend>Nueva Venta</legend>
   <div class="row control-group">
     <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
           Numero Factura
@@ -21,14 +21,13 @@
         <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required="required" readonly>
     </div>
   </div>
-
-Datos del Cliente
- <legend></legend>
+  Datos del Cliente
+ <legend>
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="row control-group">
       <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          Nombre o Razon Social
-          <div class="clearfix"></div>
+          <h4 class="mt-2">Nombre o Razon Social</h4>
+          <div class=""></div>
           <?php include "includes/chosen/index_select_cliente.php" ?>
       </div>
     </div>
@@ -50,7 +49,7 @@ Datos del Cliente
       </div>
     </div>
   </div>
-<legend></legend>
+</legend>
 
 <table id="tabla" class="table table-bordered table-striped">
   <!-- Cabecera de la tabla -->

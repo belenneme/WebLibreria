@@ -18,7 +18,7 @@
 	 	<tr>
 	 		<!--<td class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><?php echo $row_novedadempleado['idNovedad'] ?></td>-->
 	 		<td class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><?php echo $row_novedadempleado['fechaNovedad'] ?></td>
-			 <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><?php echo $row_novedadempleado['empleado_idempleado'] ?></td>
+      <td class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><?php echo $row_novedadempleado['nombreempleado'] ?></td>
 	 		<td class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><?php echo $row_novedadempleado['falta'] ?></td>
 	 		<td class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><?php echo $row_novedadempleado['llegadaTarde'] ?></td>
              <td class="col-xs-1 col-sm-1 col-md-1 col-lg-1"><a href="novedadempleado_edicion.php?idNovedad=<?php echo $row_novedadempleado['idNovedad']; ?>"><button type="button" class= "btn btn-info btn-xs"> <span class="glyphicon glyphicon-pencil"> Editar</span></button></a></td>
