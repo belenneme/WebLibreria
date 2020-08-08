@@ -34,7 +34,9 @@
   <div class="row control-group">
       <div class="form-group col-xs-12 floating-label-form-group controls">
           <label for="">Localidad</label>
-          <select class="form-control" name="inputlocalidad" id="inputlocalidad" required ></select>
+          <select class="form-control" name="inputlocalidad" id="inputlocalidad" required >
+          <option value="">Localidad</option>
+          </select>
       </div>
   </div>
 
