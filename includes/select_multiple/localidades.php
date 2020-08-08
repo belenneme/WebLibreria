@@ -19,8 +19,8 @@ $q_localidad=mysql_query($localidad);
 <?php
 while ($row_localidad=mysql_fetch_array($q_localidad)) { 
                
-        $html.= '<option value="'.$row_localidad['idlocalidad'].'">'.$row_localidad['nombrelocalidad'].'</option>';
+        $html.= '<option value="'.$row_localidad['idlocalidad'].'">'.($row_localidad['nombrelocalidad']).'</option>';
     }
 
-echo $html;
+echo utf8_encode($html);
 ?>
