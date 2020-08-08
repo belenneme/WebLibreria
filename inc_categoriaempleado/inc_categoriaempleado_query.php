@@ -7,15 +7,15 @@ if (isset($_GET['busca_categoriaempleado']) && $_GET['busca_categoriaempleado']!
 
 	if (is_numeric($busca_categoriaempleado)) {
 		$q_categoriaempleado=mysql_query("SELECT * FROM categoriaempleado 
-			WHERE idcategoriaempleado=$busca_categoriaempleado OR nombrecategoria LIKE '%$busca_categoriaempleado%' GROUP BY idcategoriaempleado ORDER BY nombrecategoria");
+			WHERE nombrecategoria LIKE '%$busca_categoriaempleado%' GROUP BY idcategoriaempleado ORDER BY nombrecategoria");
 	}
 	else {
 		$q_categoriaempleado=mysql_query("SELECT * FROM categoriaempleado
-			WHERE nombrecategoria LIKE '%$busca_categoriaempleado%' ");
+			WHERE nombrecategoria LIKE '%$busca_categoriaempleado%' ORDER BY nombrecategoria ");
 	}
 }
 else{
-	$q_categoriaempleado=mysql_query("SELECT * FROM categoriaempleado");
+	$q_categoriaempleado=mysql_query("SELECT * FROM categoriaempleado ORDER BY nombrecategoria");
 }
 
 ?>
