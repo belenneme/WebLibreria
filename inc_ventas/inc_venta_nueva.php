@@ -6,27 +6,27 @@
 
 <form action="alta_venta.php" method="POST" role="form" onsubmit="return validar();">
   <legend>Nueva Venta</legend>
-    <div class="row">
-      <div class="form-group col-lg-4">
-            Numero Factura
-            <input type="text" name="numerofactura" id="numerofactura" class="form-control" value="0000<?php echo $ult_venta?>" required readonly>
-      </div>
-      <div class="form-group col-lg-4">
-      </div>
-      <div class="form-group col-lg-4">
-          Fecha Venta
-          <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
-      </div>
+  <div class="row">
+    <div class="form-group col-lg-4">
+      Numero Factura
+      <input type="text" name="numerofactura" id="numerofactura" class="form-control" value="0000<?php echo $ult_venta?>" required readonly>
     </div>
+    <div class="form-group col-lg-4">
+    </div>
+    <div class="form-group col-lg-4">
+      Fecha Venta
+      <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
+    </div>
+  </div>
   <table id="tabla" class="table table-bordered">
   <!-- Cabecera de la tabla -->
     <thead>
       <tr>
-          <th>C&oacute;digo Producto</th>
-          <th>Descripci&oacute;n</th>
-          <th>Precio Unitario</th>
-          <th>Cantidad</th>
-          <th>Importe</th>
+        <th>C&oacute;digo Producto</th>
+        <th>Descripci&oacute;n</th>
+        <th>Precio Unitario</th>
+        <th>Cantidad</th>
+        <th>Importe</th>
       </tr>
     </thead>
     <tbody>
@@ -57,18 +57,18 @@
     <div>
       <div class="row">
         <div class="form-group col-lg-4">
-            <h4>Nombre o Razon Social</h4>
-            <?php include "includes/chosen/index_select_cliente.php" ?>
+          <h4>Nombre o Razon Social</h4>
+          <?php include "includes/chosen/index_select_cliente.php" ?>
         </div>
       </div>
       <div class="row">
         <div class="form-group col-lg-4">
-            <h5>Cuil</h5>
-            <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required readonly>
+          <h5>Cuil</h5>
+          <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required readonly>
         </div>
         <div class="form-group col-lg-4">
-            <h5>Tipo</h5> 
-            <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required readonly>
+          <h5>Tipo</h5> 
+          <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required readonly>
         </div>
         <div class="form-group col-lg-4">
           <h5>Condici&oacute;n Pago:</h5>
@@ -96,8 +96,9 @@
     });
 </script>
 
+<!-- Valida que se hayan agregados productos para habilitar btn confirmar venta -->
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
     $('#confirmarVenta').prop('disabled', true);
     var total = $('#inputsubtotal').val();
     if(total > 0) {
@@ -106,15 +107,14 @@ $(document).ready(function() {
   });
 </script>
 
-
 <!-- Funcion utilizada para aplicar porcentaje de descuento en el total de venta -->
 <script type="text/javascript">
-    $('#inputdescuento').on('change',function(){
+  $('#inputdescuento').on('change',function(){
     var descuento = 100-$(this).val();
     var subtotal = $('#inputsubtotal').val();
     var importe=subtotal*(descuento/100) ;
     $("#inputtotalcondesc").val(importe);
-    });
+  });
 </script>
 
 <!-- Funcion utilizada para validar que el cliente este registrado si se ingresa condicion de pago cuenta corriente -->

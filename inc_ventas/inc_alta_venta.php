@@ -25,7 +25,7 @@
 
 <body>
 	<br><br>
-	<div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="col-lg-12">
 		<div class="panel panel-default">
 			<p class="panel-heading no-collapse"><i class="fa fa-check" aria-hidden="true"></i>
 			Venta finalizada</p>
@@ -92,15 +92,15 @@
 						<td colspan="3" align='right'><?php echo round($total,2); ?></td>
 					</tr>
 					<tr>
-						<td align="right" colspan="6"><div id="imprimir"><a href=""><i class="fa fa-print" aria-hidden="true">    </i><strong> Imprimir</strong></a></div></td>
+						<td align="right" colspan="6"><div id="imprimir"><a href=""><i class="fa fa-print" aria-hidden="true"></i><strong> Imprimir</strong></a></div></td>
 					</tr>
 				</table>
-			<div>
-				<a href="venta_nueva.php"><strong>Volver a Ventas</strong></a>
+				<div>
+					<a href="venta_nueva.php"><strong>Volver a Ventas</strong></a>
+				</div>
 			</div>
 		</div>
-	</div>
-  	<?php include 'inc_footer.php'; ?>
+  		<?php include 'inc_footer.php'; ?>
 	</div>
 </body>
 
