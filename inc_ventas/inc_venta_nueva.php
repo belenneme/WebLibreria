@@ -57,18 +57,18 @@
     <div>
       <div class="row">
         <div class="form-group col-lg-4">
-            <h4>Nombre o Razon Social</h4>
-            <?php include "includes/chosen/index_select_cliente.php" ?>
+          <h4>Nombre o Razon Social</h4>
+          <?php include "includes/chosen/index_select_cliente.php" ?>
         </div>
       </div>
       <div class="row">
         <div class="form-group col-lg-4">
-            <h5>Cuil</h5>
-            <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required readonly>
+          <h5>Cuil</h5>
+          <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required readonly>
         </div>
         <div class="form-group col-lg-4">
-            <h5>Tipo</h5> 
-            <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required readonly>
+          <h5>Tipo</h5> 
+          <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required readonly>
         </div>
         <div class="form-group col-lg-4">
           <h5>Condici&oacute;n Pago:</h5>
