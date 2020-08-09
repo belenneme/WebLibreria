@@ -16,7 +16,7 @@ $q_localidad=mysql_query($localidad);
 
 while ($row_localidad=mysql_fetch_array($q_localidad)) { 
 		if ($row_localidad['idlocalidad'] == $idlocalidad) {
-		$html.= '<option value="'.$row_localidad['idlocalidad'].'" selected >'.$row_localidad['nombrelocalidad'].'</option>';
+		$html.= '<option value="'.$row_localidad['idlocalidad'].'" selected >'.($row_localidad['nombrelocalidad']).'</option>';
 		}
         else{       
         $html.= '<option value="'.$row_localidad['idlocalidad'].'">'.$row_localidad['nombrelocalidad'].'</option>';

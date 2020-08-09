@@ -14,13 +14,13 @@ $localidad="SELECT * FROM localidad WHERE provincia_idprovincia=$idprovincia";
 $q_localidad=mysql_query($localidad);
 ?>
 <select name="inputLocalidad" id="inputLocalidad" class="form-control" required="required">
-    <option value="0">Localidad</option>
+    <option value="">Localidad</option>
 </select>
 <?php
 while ($row_localidad=mysql_fetch_array($q_localidad)) { 
                
-        $html.= '<option value="'.$row_localidad['idlocalidad'].'">'.$row_localidad['nombrelocalidad'].'</option>';
+        $html.= '<option value="'.$row_localidad['idlocalidad'].'">'.($row_localidad['nombrelocalidad']).'</option>';
     }
 
-echo $html;
+echo utf8_encode($html);
 ?>

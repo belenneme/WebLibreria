@@ -12,8 +12,8 @@ if (isset($_GET['busca_cliente'])) {
 		INNER JOIN localidad ON localidad_idlocalidad = idlocalidad
 		INNER JOIN provincia ON provincia_idprovincia = idprovincia
 		LEFT JOIN cuenta ON  cliente_idcliente=idcliente
-		WHERE idcliente=$busca_cliente OR nombreorsocial LIKE '%$busca_cliente%' AND cliente.estado=1 GROUP BY idcliente
-		ORDER BY idcliente"); //or die("Error, no pudo ejecutarce la consulta");
+		WHERE (idcliente=$busca_cliente  or nombreorsocial OR cuilcliente LIKE '%$busca_cliente%') AND cliente.estado=1 GROUP BY idcliente
+		ORDER BY nombreorsocial"); //or die("Error, no pudo ejecutarce la consulta");
 
 	}
 	else{
@@ -23,7 +23,7 @@ if (isset($_GET['busca_cliente'])) {
 			INNER JOIN provincia ON provincia_idprovincia = idprovincia
 			LEFT JOIN cuenta ON cliente_idcliente=idcliente
 			WHERE nombreorsocial LIKE '%$busca_cliente%' AND cliente.estado=1 GROUP BY idcliente 
-			ORDER BY idcliente");
+			ORDER BY nombreorsocial");
 	}
 }
 else{
@@ -32,6 +32,6 @@ else{
 		INNER JOIN localidad ON localidad_idlocalidad = idlocalidad
 		INNER JOIN provincia ON provincia_idprovincia = idprovincia
 		LEFT JOIN cuenta ON cliente_idcliente=idcliente 
-		WHERE cliente.estado=1 ORDER BY idcliente");
+		WHERE cliente.estado=1 ORDER BY nombreorsocial");
 }
 ?>
