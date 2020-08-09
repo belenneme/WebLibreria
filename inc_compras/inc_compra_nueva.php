@@ -58,11 +58,10 @@ Nombre Proveedor
     <a href="agregar_producto_compra.php"><button type="button" class= "btn btn-default btn-md"> <span class="glyphicon glyphicon-plus"> A&ntilde;adir</span></a>
     <br>
     </div>
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div>
   <br>
   <br>
-
-  <button type="submit" class="btn boton-send btn-info pull-right btn-md">Aceptar Compra</button>
+  <button type="submit" id="confirmarCompra" class="btn boton-send btn-info pull-right btn-md">Aceptar Compra</button>
 
   <button type="button" id="cancelar" class="btn btn-danger btn-primary pull-left btn-md">Cancelar Compra</button>
     </div>
@@ -74,7 +73,18 @@ Nombre Proveedor
                  location.reload();
             });
     });
-    </script>
+</script>
+
+<script>
+$(document).ready(function() {
+    $('#confirmarCompra').prop('disabled', true);
+    var total = $('#inputsubtotal').val();
+    if(total > 0) {
+      $('#confirmarCompra').prop('disabled', false);
+    }
+  });
+</script>
+
 <!-- valida que el cliente este registrado si se ingresa condicion de pago cuenta corriente -->
 <script>
 function validar(){
