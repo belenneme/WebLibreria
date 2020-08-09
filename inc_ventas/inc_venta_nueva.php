@@ -8,8 +8,8 @@
   <legend>Nueva Venta</legend>
     <div class="row">
       <div class="form-group col-lg-4">
-            Numero Factura
-            <input type="text" name="numerofactura" id="numerofactura" class="form-control" value="0000<?php echo $ult_venta?>" required readonly>
+          Numero Factura
+          <input type="text" name="numerofactura" id="numerofactura" class="form-control" value="0000<?php echo $ult_venta?>" required readonly>
       </div>
       <div class="form-group col-lg-4">
       </div>
@@ -27,6 +27,7 @@
           <th>Precio Unitario</th>
           <th>Cantidad</th>
           <th>Importe</th>
+          <th></th>
       </tr>
     </thead>
     <tbody>
@@ -50,25 +51,25 @@
   </table>
   <!-- Botón para agregar filas -->
   <div align="right">
-    <a href="agregar_producto.php"><button type="button" class= "btn btn-default btn-md"> <span class="glyphicon glyphicon-plus"> A&ntilde;adir</span></a>
+    <a href="agregar_producto.php"><button type="button" class= "btn btn-default"> <span class="glyphicon glyphicon-plus"> A&ntilde;adir</span></a>
   </div>
   <!-- Seccion Datos del Cliente -->
   <legend>Datos del Cliente</legend>
     <div>
       <div class="row">
         <div class="form-group col-lg-4">
-            <h4>Nombre o Razon Social</h4>
-            <?php include "includes/chosen/index_select_cliente.php" ?>
+          <h4>Nombre o Razon Social</h4>
+          <?php include "includes/chosen/index_select_cliente.php" ?>
         </div>
       </div>
       <div class="row">
         <div class="form-group col-lg-4">
-            <h5>Cuil</h5>
-            <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required readonly>
+          <h5>Cuil</h5>
+          <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required readonly>
         </div>
         <div class="form-group col-lg-4">
-            <h5>Tipo</h5> 
-            <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required readonly>
+          <h5>Tipo</h5> 
+          <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required readonly>
         </div>
         <div class="form-group col-lg-4">
           <h5>Condici&oacute;n Pago:</h5>
@@ -82,8 +83,8 @@
     <div class="col-lg-12 ">
       <br>
       <br>
-      <button type="submit" class="btn boton-send btn-info pull-right btn-md">Aceptar Venta</button>
-      <button type="button" id="cancelar" class="btn btn-danger btn-primary pull-left btn-md">Cancelar Venta</button>
+      <button type="submit" class="btn btn-info pull-right">Aceptar Venta</button>
+      <button type="button" id="cancelar" class="btn btn-danger pull-left">Cancelar Venta</button>
     </div>
 </form>
 
