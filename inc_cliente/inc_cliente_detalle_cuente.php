@@ -11,7 +11,7 @@ $q_cuenta=mysql_query($cuenta);
 
 <table class='table table-bordered table-striped'>
 	<thead>
-		<th>ID cuenta</th>
+		<th>Nro Cuenta</th>
 		<th>Saldo</th>
 	</thead>
 	<tbody>
