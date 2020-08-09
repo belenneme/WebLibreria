@@ -12,14 +12,6 @@
 	$iva=0;
 	$numerofactura= $_POST['numerofactura'];
 
-	$cond_iva=mysql_query("SELECT idtipocliente FROM cliente
-	INNER JOIN tipocliente ON tipocliente_idtipocliente=idtipocliente
-	WHERE idcliente=$idcliente");
-
-	$row_cond_iva=mysql_fetch_array($cond_iva);
-	$condiva=$row_cond_iva['idtipocliente'];
-
-
 	$totSinIva=0;
 	$lineas_venta=mysql_query("SELECT * FROM lineaventa WHERE venta_idventa=1");
 	while ($row_lineaventa=mysql_fetch_array($lineas_venta)) {
@@ -29,15 +21,9 @@
 	$totSinIva= $total/1.21;
 	$iva= $total-$totSinIva;
 	if ($descuento!=0) {
-		$total=$total*((100-$descuento)/100);
+		$total=$total*((100-$descuento)/100); 
 	}
-
-	/**if ($condiva=$row_cond_iva['idtipocliente']==1) {
-		$subtotal=$total/1.21;
-		$iva=$subtotal*0.21;
-	}**/
-	// echo round($iva, 2); REDONDEA A DOS DECIMALES
-
+	
 	mysql_query("INSERT INTO venta (fechaventa, subtotal, ivaventa, totalventa, cliente_idcliente, descuentoventa, empleado_idempleado,numerofactura)
 	VALUES ('$fechaventa', '$subtotal', '$iva', '$total', '$idcliente', '$descuento', '$idempleado','$numerofactura' )");
 
