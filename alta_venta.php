@@ -23,6 +23,11 @@
 	if ($descuento!=0) {
 		$total=$total*((100-$descuento)/100); 
 	}
+
+	/*if ($ condiva = $ row_cond_iva ['idtipocliente'] == 1) {
+		$ subtotal = $ total / 1.21;
+		$ iva = $ subtotal * 0.21;}**/
+	// echo ronda ($ iva, 2); REDONDEA A DOS DECIMALES */
 	
 	mysql_query("INSERT INTO venta (fechaventa, subtotal, ivaventa, totalventa, cliente_idcliente, descuentoventa, empleado_idempleado,numerofactura)
 	VALUES ('$fechaventa', '$subtotal', '$iva', '$total', '$idcliente', '$descuento', '$idempleado','$numerofactura' )");
