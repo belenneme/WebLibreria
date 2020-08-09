@@ -21,36 +21,6 @@
         <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required="required" readonly>
     </div>
   </div>
-  Datos del Cliente
- <legend>
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="row control-group">
-      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <h4 class="mt-2">Nombre o Razon Social</h4>
-          <div class=""></div>
-          <?php include "includes/chosen/index_select_cliente.php" ?>
-      </div>
-    </div>
-    <div class="row control-group">
-      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          Cuil
-          <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required="required" readonly>
-      </div>
-      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          Tipo 
-          <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required="required" readonly>
-      </div>
-      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        Condici&oacute;n Pago:
-        <select name="condicionpago" id="inputCondicionpago" class="form-control" required="required">
-          <option value="1" selected>Contado</option>
-          <option value="0">Cuenta Corriente</option>
-        </select>
-      </div>
-    </div>
-  </div>
-</legend>
-
 <table id="tabla" class="table table-bordered table-striped">
   <!-- Cabecera de la tabla -->
   <thead>
@@ -90,7 +60,35 @@
     <a href="agregar_producto.php"><button type="button" class= "btn btn-default btn-md"> <span class="glyphicon glyphicon-plus"> A&ntilde;adir</span></a>
     </div>
 
-
+    Datos del Cliente
+ <legend>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="row control-group">
+      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <h4 class="mt-2">Nombre o Razon Social</h4>
+          <div class=""></div>
+          <?php include "includes/chosen/index_select_cliente.php" ?>
+      </div>
+    </div>
+    <div class="row control-group">
+      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          Cuil
+          <input type="text" name="cuilcliente" id="inputcuilcliente" class="form-control" value="00-00000000" required="required" readonly>
+      </div>
+      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
+          Tipo 
+          <input type="text" name="itipo" id="inputtipo" class="form-control" value="Consumidor Final" required="required" readonly>
+      </div>
+      <div class="form-group controls col-xs-12 col-sm-6 col-md-6 col-lg-4">
+        Condici&oacute;n Pago:
+        <select name="condicionpago" id="inputCondicionpago" class="form-control" required="required">
+          <option value="1" selected>Contado</option>
+          <option value="0">Cuenta Corriente</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</legend>
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <br>
   <br>
