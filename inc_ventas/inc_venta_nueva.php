@@ -18,6 +18,13 @@
           <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
       </div>
     </div>
+    <div class="form-group col-lg-4">
+    </div>
+    <div class="form-group col-lg-4">
+      Fecha Venta
+      <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
+    </div>
+  </div>
   <table id="tabla" class="table table-bordered">
   <!-- Cabecera de la tabla -->
     <thead>
@@ -83,7 +90,7 @@
     <div class="col-lg-12 ">
       <br>
       <br>
-      <button type="submit" class="btn btn-info pull-right">Aceptar Venta</button>
+      <button type="submit" id="confirmarVenta" class="btn btn-info pull-right">Aceptar Venta</button>
       <button type="button" id="cancelar" class="btn btn-danger pull-left">Cancelar Venta</button>
     </div>
 </form>
@@ -95,16 +102,27 @@
                  location.reload();
             });
     });
-    </script>
+</script>
+
+<!-- Valida que se hayan agregados productos para habilitar btn confirmar venta -->
+<script>
+  $(document).ready(function() {
+    $('#confirmarVenta').prop('disabled', true);
+    var total = $('#inputsubtotal').val();
+    if(total > 0) {
+      $('#confirmarVenta').prop('disabled', false);
+    }
+  });
+</script>
 
 <!-- Funcion utilizada para aplicar porcentaje de descuento en el total de venta -->
 <script type="text/javascript">
-    $('#inputdescuento').on('change',function(){
+  $('#inputdescuento').on('change',function(){
     var descuento = 100-$(this).val();
     var subtotal = $('#inputsubtotal').val();
     var importe=subtotal*(descuento/100) ;
     $("#inputtotalcondesc").val(importe);
-    });
+  });
 </script>
 
 <!-- Funcion utilizada para validar que el cliente este registrado si se ingresa condicion de pago cuenta corriente -->

@@ -69,13 +69,10 @@
 							<td align="right"><?php echo $row_lineas_m['subtotallineaventa'] ?></td>
 
 						</tr>
-
 					<?php $i++;}
 				?>
-
-
-<td colspan="6"></td>
-				 <tr>
+				<td colspan="6"></td>
+				<tr>
 				 	<td colspan="3" align="right"><strong>Subtotal</strong></td>
 					<td colspan="3" align="right" ><?php echo $row_venta['subtotal']; ?></td>
 
@@ -94,11 +91,12 @@
 					<td colspan="3" align='right'><?php echo $row_venta['descuentoventa']; ?></td>
 				</tr>
 				<tr>
-				 	<td align="right" colspan="6"><div id="imprimir"><a><i class="fa fa-print" aria-hidden="true">    </i><strong> Imprimir</strong></a></div></td>
+				 	<td align="right" colspan="6"><div id="imprimir"><a href=""><i class="fa fa-print" aria-hidden="true"></i><strong> Imprimir</strong></a></div></td>
 				</tr>
-	</table>
-	<div><a href="historico_ventas.php"><strong>Volver a Ventas</strong></a></div>
-
+			</table>
+			<div>
+				<a href="historico_ventas.php"><strong>Volver a Ventas</strong></a>
+			</div>
         </div>
     </div>
   <?php include 'inc_footer.php'; ?>

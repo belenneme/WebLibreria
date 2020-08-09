@@ -62,7 +62,7 @@
     <div class="col-lg-12 form-group">
       <br>
       <br>
-      <button type="submit" class="btn btn-info pull-right">Aceptar Compra</button>
+      <button type="submit" id="confirmarCompra" class="btn btn-info pull-right">Aceptar Compra</button>
       <button type="button" id="cancelar" class="btn btn-danger pull-left">Cancelar Compra</button>
     </div>
   </div>
@@ -70,26 +70,38 @@
 
 <!-- Funcion para refrescar los datos cargados en la pagina -->
 <script type="text/javascript">
-    $('#cancelar').on('click',function(){
+  $('#cancelar').on('click',function(){
     $.post("cancelarcompra.php", {}, function(data){
-                 location.reload();
-            });
+      location.reload();
     });
+  });
 </script>
-<!-- Funcion para validar que se seleccione un proveedor -->
+
+<!-- valida que se agreg{o un producto para confirmar la compra -->
 <script>
-  function validar(){
-  var idproveedor = $('#inputidproveedor').val();
+$(document).ready(function() {
+  $('#confirmarCompra').prop('disabled', true);
   var total = $('#inputsubtotal').val();
-          if(idproveedor==0){
-          alert('Debe seleccionar un proveedor');
-          return false;
-          }
-          else {
-            if (total==0) {
-              alert('cargar al menos un producto');
-              return false;
-            }
-          }
+  if(total > 0) {
+    $('#confirmarCompra').prop('disabled', false);
   }
+});
+</script>
+
+<!-- valida que el cliente este registrado si se ingresa condicion de pago cuenta corriente -->
+<script>
+function validar(){
+var idproveedor = $('#inputidproveedor').val();
+var total = $('#inputsubtotal').val();
+  if(idproveedor==0){
+  alert('Debe seleccionar un proveedor');
+  return false;
+  }
+  else {
+    if (total==0) {
+      alert('cargar al menos un producto');
+      return false;
+    }
+  }
+}
 </script>
