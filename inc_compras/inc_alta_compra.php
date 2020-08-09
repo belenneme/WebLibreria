@@ -90,7 +90,7 @@
 					<td colspan="3" align='right'><?php echo $totalcompra; ?></td>
 				</tr>
 				<tr>
-				 	<td align="right" colspan="6"><div id="imprimir"><a><i class="fa fa-print" aria-hidden="true">    </i><strong> Imprimir</strong></a></div></td>
+				 	<td align="right" colspan="6"><div id="imprimir"><a href=""><i class="fa fa-print" aria-hidden="true">    </i><strong> Imprimir</strong></a></div></td>
 				</tr>
 	</table>
 	<div><a href="compra_nueva.php"><strong>Volver a Compras</strong></a></div>
