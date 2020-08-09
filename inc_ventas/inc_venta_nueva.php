@@ -96,7 +96,7 @@ Datos del Cliente
   <br>
   <br>
 
-  <button type="submit" class="btn boton-send btn-info pull-right btn-md" disabled=isDisabled>Aceptar Venta</button>
+  <button type="submit" id="confirmarVenta" class="btn boton-send btn-info pull-right btn-md" >Aceptar Venta</button>
 
   <button type="button" id="cancelar" class="btn btn-danger btn-primary pull-left btn-md" >Cancelar Venta</button>
     </div>
@@ -110,15 +110,14 @@ Datos del Cliente
     });
 </script>
 
-<script type="text/javascript">
-    function isDisabled(){
-      var checkQtyProduct = $('#inputsubtotal').val();
-      if(checkQtyProduct > 0) {
-        return true;
-      } else {
-        return false;
-      }
+<script>
+$(document).ready(function() {
+    $('#confirmarVenta').prop('disabled', true);
+    var total = $('#inputsubtotal').val();
+    if(total > 0) {
+      $('#confirmarVenta').prop('disabled', false);
     }
+  });
 </script>
 
 
