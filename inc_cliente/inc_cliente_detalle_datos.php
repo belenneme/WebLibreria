@@ -8,10 +8,10 @@ $row_cliente= mysql_fetch_array($q_cliente);
 
 <table class='table table-bordered table-striped'>
 
-<tr>
+<!--<tr>
 	<td><div align='right'>ID cliente: </div></td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><?php echo $idcliente; ?></div></td>
-</tr> 
+</tr> -->
 
 <tr>
 	<td><div align='right'>Nombre y apellido/Razon social: </div></td>

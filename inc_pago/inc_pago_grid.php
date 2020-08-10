@@ -4,8 +4,8 @@
 	if ($num_total_registros>0) {?>
 		<table class="table">
 			<tr>
-				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Id Cuenta</th>
-				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">cliente</th>
+				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Nro Cuenta</th>
+				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Cliente</th>
 				<th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Saldo</th>
 				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">CUIL</th>
 				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></th>

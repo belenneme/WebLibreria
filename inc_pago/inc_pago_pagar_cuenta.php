@@ -26,7 +26,7 @@ $row_cliente= mysql_fetch_array($q_cliente);
 
 
 <tr>
-	<td><div align='right'>ID Cuenta </div></td>
+	<td><div align='right'>Nro Cuenta </div></td>
 	<td><div class="col-xs-12 col-sm-8 col-md-12 col-lg-12"><input class="form-control" type="text" name="idcuenta" size="25" value="<?php echo $row_cliente['idcuenta'] ?>"  ></div></td>
 </tr>
 

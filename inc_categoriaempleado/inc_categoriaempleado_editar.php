@@ -11,13 +11,13 @@ $row_categoriaempleado= mysql_fetch_array($q_categoriaempleado);
 <table class='table table-bordered table-striped'>
 <form action="categoriaempleado_editar_ok.php" method="POST">
 
-<tr>
+<!--<tr>
 	<td><div align='right'>ID categoria</td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input class="form-control" type="text" value="<?php echo $idcategoriaempleado; ?>" name="idcategoriaempleado" readonly></div></td>
-</tr>
+</tr>-->
 
 <tr>
-	<td><div align='right'>NombrE</div></td>
+	<td><div align='right'>Nombre</div></td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input class="form-control" type="text" name="nombrecategoria" required="required" value="<?php echo $row_categoriaempleado['nombrecategoria'] ?>"></div></td>
 	
 </tr>

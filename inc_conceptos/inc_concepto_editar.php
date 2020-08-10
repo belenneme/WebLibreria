@@ -12,7 +12,7 @@ $row_concepto= mysql_fetch_array($q_concepto);
 <form action="concepto_editar_ok.php" method="POST">
 
 <tr>
-	<td><div align='right'>ID Concepto: </td>
+	<td><div align='right'>Código: </td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input class="form-control" type="text" value="<?php echo $idconcepto; ?>" name="idconcepto" readonly></div></td>
 </tr>
 

@@ -11,10 +11,10 @@ $row_novedadempleado= mysql_fetch_array($q_novedadempleado);
 <table class='table table-bordered table-striped'>
 <form action="novedadempleado_editar_ok.php" method="POST">
 
-<tr>
+<!--<tr>
 	<td><div align='right'>ID Novedad</td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input class="form-control" type="text" value="<?php echo $idnovedadempleado; ?>" name="idnovedadempleado" readonly></div></td>
-</tr>
+</tr>-->
 
 <tr>
 	<td><div align='right'>Fecha</div></td>
