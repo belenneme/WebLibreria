@@ -6,7 +6,7 @@
 	if ($num_total_registros>0) {?>
 		<table class="table">
 			<tr>
-				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Id</th>
+				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Código</th>
 				<th class="col-xs-5 col-sm-5 col-md-5 col-lg-5">Descripcion</th>
         <th class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></th>
 				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></th>
