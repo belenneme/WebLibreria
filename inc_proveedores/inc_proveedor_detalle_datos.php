@@ -8,10 +8,10 @@ $row_proveedor= mysql_fetch_array($q_proveedor);
 
 <table class='table table-bordered table-striped'>
 
-<tr>
+<!--<tr>
 	<td><div align='right'>id Proveedor: </div></td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><?php echo $idproveedor; ?></div></td>
-</tr> 
+</tr> -->
 
 <tr>
 	<td><div align='right'>CUIL: </div></td>
@@ -28,7 +28,7 @@ $row_proveedor= mysql_fetch_array($q_proveedor);
 </tr>
 <tr>
 	<td><div align='right'>Telefono: </div></td>
-	<td><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><?php echo $row_proveedor['telefonoproveedor'] ?>"</div></td>
+	<td><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><?php echo $row_proveedor['telefonoproveedor'] ?></div></td>
 </tr>
 
 </table>
