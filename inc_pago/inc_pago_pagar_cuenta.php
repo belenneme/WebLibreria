@@ -28,10 +28,6 @@ $row_cliente= mysql_fetch_array($q_cliente);
 			<td></td>
 			<td><div class="col-lg-12"><input type="submit" class="btn btn-info pull-right" name="button" id="button" value="Pagar"></div></td>
 		</tr>
-		<tr>
-			<td></td>
-			<td><div id="imprimir" class="ol-lg-12"><a class="btn btn-info pull-right">Imprimir Comprobante</a></div></td>
-		</tr>
 	</form>
 </table>
 

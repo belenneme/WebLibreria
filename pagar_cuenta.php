@@ -15,7 +15,7 @@
 		<div class="header">
 			<h1 class="page-title">Pago de Cuentas</h1>
 			<ul class="breadcrumb">
-	    		<li><a href="clientes.php">Cuentas Corrientes</a> </li>
+	    		<li><a href="pago.php">Cuentas Corrientes</a> </li>
 	    		<li class="active">Realizar Pago</li>
 			</ul>
 		</div>

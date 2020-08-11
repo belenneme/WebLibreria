@@ -18,7 +18,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "sis_header.php" ?>
-<title>Smile</title>
 </head>
 
 <body>
@@ -30,20 +29,20 @@
         <div class="panel-body">
             <table class='table  table-bordered table-striped'>
 				<tr>
-					<td class="info" align="right" class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><div align='right'>Fecha </div></td>
-					<td  align="left" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php echo $fecha; ?></div></td>
+					<td class="info" align="right" class="col-lg-3"><div align='right'>Fecha </div></td>
+					<td  align="left" class="col-lg-4"><?php echo $fecha; ?></div></td>
 					<td class="info" align="right"><div align='right'>Empleado</div></td>
-					<td  align="lef" colspan="3" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><div><?php echo $row_empleado['apellidoempleado']; ?></div></td>
+					<td  align="lef" colspan="3" class="col-lg-4"><div><?php echo $row_empleado['apellidoempleado']; ?></div></td>
 				</tr>
 				<tr class="active">
 					<td class="info" ><div align='right'>Cliente: </div></td>
 					<td><?php echo $row_cliente['nombreorsocial']; ?></td>
-					<td class="info"><div align='right'>Cuil Cliente: </div></td>
-					<td align="lef" colspan="3" class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><?php echo $row_cliente['cuilcliente']; ?></td>
+					<td class="info col-lg-4"><div align='right'>Cuil Cliente: </div></td>
+					<td align="lef" colspan="3" class="col-lg-4"><?php echo $row_cliente['cuilcliente']; ?></td>
 				</tr>
 				<tr>
 					<td class="info" ><div class="info" align='right'>Numero de Cuenta: </div></td>
-					<td  colspan="5"><?php echo $row_cliente['idcuenta']; ?></td>
+					<td class="col-lg-3" colspan="5"><?php echo $row_cliente['idcuenta']; ?></td>
 				</tr>
 				<tr>
 					<br>
@@ -51,7 +50,7 @@
 					
 				</tr>
 				<tr>
-					<td class="info" align="right">Descripcion de Pago</td>
+					<td class="info col-lg-4" align="right">Descripcion de Pago</td>
 					<td class="info" align="right">Monto</td>
                     <td class="info" align="right">Saldo Anterior</td>
                     <td class="info" align="right">Saldo Actual</td>
