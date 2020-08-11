@@ -37,9 +37,7 @@
 		$nuevostock=$row_stock_prod['stockproducto']+$row_stock_prod['cantidad'];
 		$precionuevo=$row_stock_prod['neto']/$row_stock_prod['cantidad'];
 		$idproducto=$row_stock_prod['idproducto'];
-
 		mysql_query("UPDATE producto SET stockproducto='$nuevostock', preciocompra='$precionuevo'  WHERE idproducto='$idproducto'");
-
 	}
 
 	include "inc_compras/inc_alta_compra.php";

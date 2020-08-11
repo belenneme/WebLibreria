@@ -19,12 +19,12 @@
 	<div class="panel panel-default">
         <a href="#page-stats" class="panel-heading" data-toggle="collapse">Pago</a>
         <div id="page-stats" class="panel-collapse panel-body collapse in">
-        <?php  include "inc_pago/inc_pagar_cuenta_ok.php" ?>
+		<?php  include "inc_pago/inc_pagar_cuenta_ok.php" ?>
         </div>
     </div>
 
 	<?php include "inc_footer.php" ?>
-	</div>
+	
 </div>
 <?php include "sis_script_bootstrap.php" ?>
 </body>
