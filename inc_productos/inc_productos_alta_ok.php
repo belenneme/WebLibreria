@@ -14,8 +14,8 @@
 	 $ivaproducto= $preciocompra/1.21;
 
 
-	$alta_producto = "INSERT INTO producto (nombreproducto, marca, stockproducto, porcentajeganancia, precioventa, preciocompra, stockcritico, categoriaproducto_idcategoriaproducto,ivaproducto)
-	 VALUES ('$nombreproducto',' $marcaproducto','$stockproducto', '$porcganancia', '$preciopublico', '$preciocompra', '$stockcritico', '$idcategoriaproductos',$ivaproducto)";
+	$alta_producto = "INSERT INTO producto (nombreproducto, marca, stockproducto, porcentajeganancia, precioventa, preciocompra, stockcritico, categoriaproducto_idcategoriaproducto,ivaproducto, estado)
+	 VALUES ('$nombreproducto',' $marcaproducto','$stockproducto', '$porcganancia', '$preciopublico', '$preciocompra', '$stockcritico', '$idcategoriaproductos',$ivaproducto, 1)";
 	mysql_query($alta_producto);
 ?>
 
