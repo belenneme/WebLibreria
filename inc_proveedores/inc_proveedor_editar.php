@@ -9,10 +9,10 @@ $row_proveedor= mysql_fetch_array($q_proveedor);
 <table class='table table-bordered table-striped'>
 <form action="proveedor_editar_ok.php" method="POST">
 
-<tr>
+<!--<tr>
 	<td><div align='right'>id Proveedor: </td>
 	<td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input class="form-control" type="text" value="<?php echo $idproveedor; ?>" name="idprov" readonly></div></td>
-</tr> 
+</tr> -->
 
 <tr>
 	<td><div align='right'>CUIL: </div></td>

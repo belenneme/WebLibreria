@@ -30,5 +30,9 @@ $row_cliente= mysql_fetch_array($q_cliente);
 		</tr>
 	</form>
 </table>
+<form action="pagar_cuenta_ok.php" method="POST">
+
+
+
 
 

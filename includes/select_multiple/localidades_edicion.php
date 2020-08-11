@@ -23,5 +23,5 @@ while ($row_localidad=mysql_fetch_array($q_localidad)) {
     	}
     }
 
-echo $html;
+echo utf8_encode($html);
 ?>

@@ -6,12 +6,13 @@ INNER JOIN categoriaempleado ON categoriaempleado_idcategoriaempleado=idcategori
 INNER JOIN direccion ON direccion_iddireccion=iddireccion
 LEFT JOIN localidad ON localidad_idlocalidad=idlocalidad
 LEFT JOIN provincia ON provincia_idprovincia=idprovincia
-
 WHERE idempleado=$idempleado";
+
 $q_empleado=mysql_query($empleado);
 $row_empleado= mysql_fetch_array($q_empleado);
 
-$grupofamiliar="SELECT * FROM grupofamiliar 
+$grupofamiliar="SELECT * FROM grupofamiliar
+INNER JOIN parentesco ON idparentesco = parentesco_idparentesco 
 WHERE empleado_idempleado=$idempleado";
 $q_grupofamiliar=mysql_query($grupofamiliar);
 
@@ -19,10 +20,10 @@ $q_grupofamiliar=mysql_query($grupofamiliar);
 
 <table class='table table-bordered table-striped'>
 
-<tr>
+<!--<tr>
 	<td><div align='right'>id: </div></td>
 	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo $idempleado; ?></div></td>
-</tr> 
+</tr> -->
 <tr>
 	<td><div align='right'>Apellido: </div></td>
 	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo $row_empleado['apellidoempleado'] ?></div></td>
@@ -53,7 +54,7 @@ $q_grupofamiliar=mysql_query($grupofamiliar);
 		<div>
 			<?php 
 				while ($row_grupo= mysql_fetch_array($q_grupofamiliar)) {
-					echo $row_grupo['nombre_pariente']." ".$row_grupo['apellido_pariente']."(".$row_grupo['parentesco']."), ";
+					echo $row_grupo['nombre_pariente']." ".$row_grupo['apellido_pariente']." (".$row_grupo['descripcion']."), ";
 				}
 			 ?>
 		</div>
@@ -71,11 +72,11 @@ $q_grupofamiliar=mysql_query($grupofamiliar);
 </tr>
 <tr>
 	<td><div align='right'>Provincia: </div></td>
-	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo $row_empleado['nombreprovincia'] ?></div></td>
+	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo utf8_encode($row_empleado['nombreprovincia']) ?></div></td>
 </tr>
 <tr>
 	<td><div align='right'>Localidad: </div></td>
-	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo $row_empleado['nombrelocalidad'] ?></div></td>
+	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo utf8_encode($row_empleado['nombrelocalidad']) ?></div></td>
 </tr>
 <tr>
 	<td><div align='right'>Direcci&oacute;n: </div></td>

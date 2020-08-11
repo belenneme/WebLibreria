@@ -29,7 +29,7 @@
                     <input name="cantidad" type="number" min="0" class="form-control span12" id="cantidad" required>
                 </div>
                  <button type="button" id="cancelaradd" class="btn btn-danger">Cancelar</button>
-                 <input type="submit" name="button" id="button" value="Enviar" class="btn btn-info pull-right" />
+                 <input type="submit" name="button" id="button" value="Agregar" class="btn btn-info pull-right" />
                 <div class="clearfix"></div>
             </form>
         </div>

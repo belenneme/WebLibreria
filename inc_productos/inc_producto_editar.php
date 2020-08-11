@@ -10,7 +10,7 @@ $row_producto= mysql_fetch_array($q_producto);
 <form action="producto_editar_ok.php" method="POST">
 
 <tr>
-	<td><div align='right'>Id: </td>
+	<td><div align='right'>Código: </td>
 	<td><div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><input class="form-control" type="text" value="<?php echo $idproducto; ?>" name="idproducto" readonly></div></td>
 </tr>
 
