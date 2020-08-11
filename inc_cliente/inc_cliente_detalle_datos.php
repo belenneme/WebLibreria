@@ -30,7 +30,7 @@ $row_cliente= mysql_fetch_array($q_cliente);
 </tr>
 <tr>
 	<td><div align='right'>Telefono: </div></td>
-	<td><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><?php echo $row_cliente['telefonocliente'] ?>"</div></td>
+	<td><div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"><?php echo $row_cliente['telefonocliente'] ?></div></td>
 </tr>
 
 </table>

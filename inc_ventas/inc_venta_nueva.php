@@ -18,12 +18,6 @@
           <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
       </div>
     </div>
-    <div class="form-group col-lg-4">
-    </div>
-    <div class="form-group col-lg-4">
-      Fecha Venta
-      <input type="text" name="fechaventa" id="inputFechaventa" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
-    </div>
   </div>
   <table id="tabla" class="table table-bordered">
   <!-- Cabecera de la tabla -->
