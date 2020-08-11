@@ -1,7 +1,7 @@
 
 <?php
 $hostname_conexion_weblibreria = "localhost";
-$database_conexion_weblibreria = "db_compu_nuevo";
+$database_conexion_weblibreria = "web_libreria";
 $username_conexion_weblibreria = "root";
 $password_conexion_weblibreria = "";
 
