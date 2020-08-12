@@ -6,7 +6,7 @@
   ORDER BY razonsocialproveedor");  
 ?>
   <select data-placeholder="Proveedores" class="form-control chosen-select" tabindex="4" name="idproveedor" id="inputidproveedor">
-       <option value="0">Seleccionar proveedor</option>
+       <option value="">Seleccionar proveedor</option>
       <?php 
       while ($row_proveedor=mysql_fetch_array($q_proveedores)){ 
         if ($row_proveedor['idproveedor']!=0) { ?>

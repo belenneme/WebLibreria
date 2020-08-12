@@ -1,9 +1,22 @@
 <?php mysql_select_db($database_conexion_weblibreria,$conexion_weblibreria);
+  $compra=mysql_query("SELECT * FROM compra ORDER BY idcompra DESC LIMIT 0,1");
+  $row_compra=mysql_fetch_array($compra);
+  $ult_compra=$row_compra['idcompra']+1;
 ?>
+
 <form action="alta_compra.php" method="POST" role="form" onsubmit="return validar()">
-  <div class="row control-group">
-    <div class="form-group col-lg-3 col-lg-offset-9">
-        <input type="text" name="fechacompra" id="inputFechacompra" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
+<legend>Nueva Compra</legend>
+    <div class="row">
+      <div class="form-group col-lg-4">
+          Numero Factura
+          <input type="text" name="numerofactura" id="numerofactura" class="form-control" value="0000<?php echo $ult_compra?>" required readonly>
+      </div>
+      <div class="form-group col-lg-4">
+      </div>
+      <div class="form-group col-lg-4">
+          Fecha Compra
+          <input type="text" name="fechacompra" id="inputFechacompra" class="form-control" value="<?php echo date("Y-m-d h:i:s");?>" required readonly>
+      </div>
     </div>
   </div>
   <legend><h4>Datos de Productos</h4></legend>
@@ -11,8 +24,8 @@
     <!-- Cabecera de la tabla -->
     <thead>
       <tr>
-        <th class="col-lg-2">C&oacute;digo de Producto</th>
-        <th class="col-lg-3">Descripci&oacute;n</th>
+        <th class="col-lg-2">Código de Producto</th>
+        <th class="col-lg-3">Descripción</th>
         <th class="col-lg-2">Precio Unitario</th>
         <th class="col-lg-2">Cantidad</th>
         <th class="col-lg-2">Importe</th>
@@ -33,7 +46,7 @@
   </table>
   <!-- Botón para agregar filas -->
   <div align="right">
-    <a href="agregar_producto_compra.php"><button type="button" class= "btn btn-default"><span class="glyphicon glyphicon-plus"> A&ntilde;adir</span></a>
+    <a href="agregar_producto_compra.php"><button type="button" class= "btn btn-default"><span class="glyphicon glyphicon-plus"> Añadir</span></a>
     <br>
   </div>
   <div class="col-lg-12">
@@ -49,13 +62,7 @@
         </div>
         <div class="form-group col-lg-4">
           Cuil
-          <input type="text" name="cuilproveedor" id="inputcuilproveedor" class="form-control" value="00-00000000" required="required" readonly>
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group col-lg-4">
-          Factura n&uacute;mero
-          <input type="text" name="numerofactura" id="inputnumerofactura" class="form-control" value="">
+          <input type="text" name="cuilproveedor" id="inputcuilproveedor" class="form-control" value="" required="required" readonly>
         </div>
       </div>
     </div>
@@ -88,7 +95,7 @@ $(document).ready(function() {
 });
 </script>
 
-<!-- valida que el cliente este registrado si se ingresa condicion de pago cuenta corriente -->
+<!-- valida que el proveedor se haya ingresado y que tenga por lo menos un producto-->
 <script>
 function validar(){
 var idproveedor = $('#inputidproveedor').val();

@@ -12,15 +12,15 @@
 
   <div class="row control-group">
     <div class="form-group col-xs-12 floating-label-form-group controls">
-        <label for="">Cuil</label>
-        <input  type="text" placeholder="Cuil" class="form-control" id="" name="cuilproveedor">
+        <label for="">CUIT</label>
+        <input  type="text" placeholder="Cuit" class="form-control" id="" name="cuilproveedor" required>
     </div>
   </div>
 
   <div class="row control-group">
     <div class="form-group col-xs-12 floating-label-form-group controls">
         <label for="">E-mail</label>
-        <input placeholder="E-mail" type="text" class="form-control" id="" name="mailproveedor">
+        <input placeholder="E-mail" type="text" class="form-control" id="" name="mailproveedor" required>
     </div>
   </div>
 
@@ -53,7 +53,7 @@
 
     <div class="row control-group">
         <div class="form-group col-xs-12 floating-label-form-group controls">
-            <label for="">N&uacute;mero (*)</label>
+            <label for="">Número (*)</label>
             <input type="text" class="form-control" placeholder="N&uacute;mero (*)" id="" name="numero" required>
         </div>
     </div>
@@ -73,7 +73,7 @@
   </div>
   <div class="row control-group">
        <div class="form-group col-xs-12 floating-label-form-group controls">
-        <label for="">Tel&eacute;fono</label>
+        <label for="">Telefono</label>
         <input type="text" class="form-control" placeholder="Tel&eacute;fono" id="" name="telefonoproveedor">
       </div>
     </div>
