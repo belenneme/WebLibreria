@@ -10,10 +10,10 @@ $row_direccion= mysql_fetch_array($q_direccion);
 <table class='table table-bordered table-striped'>
 <form action="empleado_direccion_modificar_ok.php" method="POST">
   <input type="hidden" name="idempleado" id="" class="form-control" value="<?php echo $idempleado; ?>">
-<tr>
+<!--<tr>
   <td><div align='right'>id Direcci&oacute;n: </td>
   <td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input class="form-control" type="text" value="<?php echo $iddireccion; ?>" name="iddireccion" readonly></div></td>
-</tr> 
+</tr> -->
 
 <tr>
   <td><div align='right'>Provincia: </div></td>

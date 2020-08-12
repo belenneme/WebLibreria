@@ -34,7 +34,7 @@
                 </div>
 
                  <button type="button" id="cancelaradd" class="btn btn-danger">Cancelar</button>
-                 <input type="submit" name="button" id="button" value="Enviar" class="btn btn-info pull-right" />
+                 <input type="submit" name="button" id="button" value="Agregar" class="btn btn-info pull-right" />
                 <div class="clearfix"></div>
             </form>
         </div>

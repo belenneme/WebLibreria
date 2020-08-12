@@ -140,7 +140,7 @@ label {
   text-shadow: none;
 }
 .navbar .nav > li:hover {
-  background-color: rgb(241, 21, 21);
+  background-color: #dab072;
 }
 .navbar .nav > li > a:hover {
   color: white;
@@ -150,7 +150,7 @@ label {
   color: #444;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle {
-  background-color: rgb(253, 53, 17);
+  background-color: #212f56;
   color: #fff;
 }
 .navbafr {
@@ -197,7 +197,7 @@ label {
 }
 .content {
   position: relative;
-  min-height: 800px;
+  min-height: 750px;
   background: #fff;
   margin-left: 240px;
   border-left: 1px solid #cccccc;
@@ -245,6 +245,13 @@ footer {
   font-size: .95em;
   line-height: 1.3em;
   margin: 4em -3px 0em -3px;
+
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 footer hr {
   margin: 2em -2em;
@@ -424,9 +431,9 @@ a.panel-heading:hover,
 .sidebar-nav .nav-header {
 
   border-bottom: 1px solid;
-  background: #C9302C;
+  background: #dab072;
   border-left: none;
-  color:white;
+  color:#212f56;
   display: block;
   font-weight: normal;
   font-size: 1em;

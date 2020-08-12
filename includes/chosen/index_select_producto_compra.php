@@ -1,7 +1,7 @@
 <?php
  mysql_select_db($database_conexion_weblibreria,$conexion_weblibreria);
 
-  $q_productos=mysql_query("SELECT * FROM producto
+  $q_productos=mysql_query("SELECT * FROM producto WHERE estado=1
   ORDER BY nombreproducto");
 ?>
   <select data-placeholder="Productos" class="form-control chosen-select" tabindex="4" name="idproducto" id="inputidproducto">

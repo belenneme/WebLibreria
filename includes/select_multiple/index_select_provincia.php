@@ -6,10 +6,10 @@
 
 ?>    
     <select name="inputProvincia" id="inputProvincia" class="form-control" required="required">
-    <option value="0">Provincia</option>
+    <option value="">Provincia</option>
     <?php 
       while ($row_provincia=mysql_fetch_array($q_provincia)) { ?>
-          <option value="<?php echo $row_provincia['idprovincia']?>"><?php echo $row_provincia['nombreprovincia']?></option>
+          <option value="<?php echo $row_provincia['idprovincia']?>"><?php echo utf8_encode($row_provincia['nombreprovincia'])?></option>
       <?php }
       ?>
     </select> 

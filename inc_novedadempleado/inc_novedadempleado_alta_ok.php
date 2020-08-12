@@ -3,7 +3,7 @@
     $fechaNovedad=$_POST['fechanovedad'];
 	$llegadaTarde=$_POST['llegadaTarde'];
     $falta=$_POST['falta'];
-    $idempleado=$_POST['idempleado'];
+	$idempleado=$_POST['idempleado'];
     
 
 

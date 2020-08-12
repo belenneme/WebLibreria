@@ -15,7 +15,7 @@
 <div class="main-content">
 
 	<center>
-	     <img src="images/logo1.jpg" alt="Logo" width="500px">
+	     <img src="images/3.png" alt="Logo" width="500px">
 	</center>
 <?php
 ?>

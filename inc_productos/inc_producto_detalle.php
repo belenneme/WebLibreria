@@ -11,7 +11,7 @@ $row_producto= mysql_fetch_array($q_producto);
 <table class='table table-bordered table-striped'>
 
 <tr>
-	<td><div align='right'>id: </div></td>
+	<td><div align='right'>Código: </div></td>
 	<td class="col-xs-6 col-sm-6 col-md-6 col-lg-6"><div><?php echo $idproducto; ?></div></td>
 </tr>
 

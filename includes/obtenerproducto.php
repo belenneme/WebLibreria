@@ -1,7 +1,7 @@
 
 <?php
 $hostname_conexion_weblibreria = "localhost";
-$database_conexion_weblibreria = "db_compu_nuevo";
+$database_conexion_weblibreria = "web_libreria";
 $username_conexion_weblibreria = "root";
 $password_conexion_weblibreria = "";
 
@@ -11,7 +11,7 @@ mysql_select_db($database_conexion_weblibreria,$conexion_weblibreria);
 
 
 $idproductojs = $_POST['idproductojs'];
-$q_productos=mysql_query("SELECT * FROM producto
+$q_productos=mysql_query("SELECT * FROM producto 
   WHERE idproducto=$idproductojs
   ORDER BY nombreproducto"); 
 $row_producto=mysql_fetch_array($q_productos);

@@ -17,7 +17,9 @@ $idproveedor=$_GET['idproveedor'];
 <tr>
   <td><div align='right'>Localidad: </div></td>
   <td><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <select class="form-control" name="inputlocalidad" id="inputlocalidad" required ></select>
+      <select class="form-control" name="inputlocalidad" id="inputlocalidad" required >
+        <option value="">Localidad</option>
+      </select>
       </div>
   </td>  
 </tr> 
