@@ -5,8 +5,8 @@
 		<table class="table">
 			<tr>
 				<!--<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Id</th>-->
-				<th class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Raz&oacute;n Social</th>
-				<th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Tel&eacute;fono</th>
+				<th class="col-xs-3 col-sm-3 col-md-3 col-lg-3">Razón Social</th>
+				<th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Teléfono</th>
 				<th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Provincia</th>
 				<th class="col-xs-2 col-sm-2 col-md-2 col-lg-2">Localidad</th>
 				<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></th>
